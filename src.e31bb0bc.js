@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\form\\mobile-form.png":[["mobile-form.a1f5de74.png","images/form/mobile-form.png"],"images/form/mobile-form.png"],"./..\\images\\form\\mobile-form@2x.png":[["mobile-form@2x.e39ce159.png","images/form/mobile-form@2x.png"],"images/form/mobile-form@2x.png"],"./..\\images\\form\\tablet-form.png":[["tablet-form.c92e52ad.png","images/form/tablet-form.png"],"images/form/tablet-form.png"],"./..\\images\\form\\tablet-form@2x.png":[["tablet-form@2x.d985b38b.png","images/form/tablet-form@2x.png"],"images/form/tablet-form@2x.png"],"./..\\images\\form\\desktop-form.png":[["desktop-form.312e4d6f.png","images/form/desktop-form.png"],"images/form/desktop-form.png"],"./..\\images\\form\\desktop-form@2x.png":[["desktop-form@2x.6ac6945e.png","images/form/desktop-form@2x.png"],"images/form/desktop-form@2x.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./..\\images\\problems\\burn.png":[["burn.3946592c.png","images/problems/burn.png"],"images/problems/burn.png"],"./..\\images\\problems\\burn@2x.png":[["burn@2x.1794ffa1.png","images/problems/burn@2x.png"],"images/problems/burn@2x.png"],"./..\\images\\svg\\checked.svg":[["checked.a1cc4103.svg","images/svg/checked.svg"],"images/svg/checked.svg"],"./..\\images\\form\\mobile-form.png":[["mobile-form.a1f5de74.png","images/form/mobile-form.png"],"images/form/mobile-form.png"],"./..\\images\\form\\mobile-form@2x.png":[["mobile-form@2x.e39ce159.png","images/form/mobile-form@2x.png"],"images/form/mobile-form@2x.png"],"./..\\images\\form\\tablet-form.png":[["tablet-form.c92e52ad.png","images/form/tablet-form.png"],"images/form/tablet-form.png"],"./..\\images\\form\\tablet-form@2x.png":[["tablet-form@2x.d985b38b.png","images/form/tablet-form@2x.png"],"images/form/tablet-form@2x.png"],"./..\\images\\form\\desktop-form.png":[["desktop-form.312e4d6f.png","images/form/desktop-form.png"],"images/form/desktop-form.png"],"./..\\images\\form\\desktop-form@2x.png":[["desktop-form@2x.6ac6945e.png","images/form/desktop-form@2x.png"],"images/form/desktop-form@2x.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./sass/main.scss");
@@ -221,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60960" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64402" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
