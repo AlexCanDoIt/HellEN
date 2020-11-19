@@ -60,7 +60,9 @@
     flex-direction: column;
     align-items: center;
 
-    padding: 20px 35px;
+    padding: 0 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
     margin-bottom: 20px;
     text-align: center;
     background: $second-title;
@@ -78,6 +80,7 @@
     box-sizing: border-box;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
   }
 
   &__main-photo {
@@ -90,7 +93,6 @@
   }
 
   &__box-title {
-    margin-top: 20px;
     margin-bottom: 20px;
     @include font(14px, 17px);
     font-weight: 800;
@@ -104,22 +106,24 @@
     font-weight: 500;
     letter-spacing: 0.08em;
     color: $text;
+
+    width: 240px;
   }
 
   &__desc {
     @include font(12px, 20px);
     font-weight: 500;
-    letter-spacing: 0em;
+
     color: $second-text;
+    width: 240px;
     /* text-align: center; */
   }
 
   &__to-be-continued {
     @include font(12px, 20px);
     font-weight: 500;
-    letter-spacing: 0em;
+
     color: $accent-color;
-    text-decoration: underline;
   }
   &__gallery {
     position: relative;
@@ -155,20 +159,12 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
+    width: 182px;
+    justify-content: space-between;
   }
 
   &__photo:nth-child(n + 4) {
     display: none;
-  }
-
-  &__photo:not(last-child) {
-    margin-right: 10px;
-  }
-
-  &__link {
-    width: 54px;
-    height: 54px;
-    border-radius: 50%;
   }
 }
 //--------------------------//////////////////////////////////
@@ -181,18 +177,17 @@
     &__block {
       position: relative;
       width: 713px;
-      height: 459px;
     }
     &__button {
       &.left {
         position: absolute;
         top: 157px;
-        left: 0;
+        left: -13.5px;
       }
       &.right {
         position: absolute;
         top: 157px;
-        right: 0;
+        right: -13.5px;
       }
     }
     &__item {
@@ -202,6 +197,7 @@
       padding: 40px;
       margin-bottom: 30px;
       text-align: left;
+      //   width: 688px;
       &.is-active {
         display: flex;
       }
@@ -216,6 +212,7 @@
       margin-left: 46px;
     }
     &__box-title {
+      font-weight: 800;
       margin-top: 0;
       margin-bottom: 20px;
       @include font(20px, 24px);
@@ -223,27 +220,48 @@
 
     &__box-subtitle {
       margin-bottom: 20px;
+      font-weight: 500;
+      @include font(12px, 15px);
+      width: 412px;
+    }
+    &__desc {
+      font-weight: 500;
+      color: $second-text;
+      @include font(12px, 20px);
+      width: 412px;
+    }
+    &__to-be-continued {
+      @include font(12px, 20px);
+      font-weight: 500;
+      color: $accent-color;
     }
 
     &__photo:nth-child(n + 4) {
       display: block;
+    }
+    &__list {
+      width: 558px;
+      //   justify-content: space-between;
     }
   }
 }
 //---------------------------------------------------//
 @media screen and (min-width: 1355px) {
   .reviews {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 130px;
+    padding-bottom: 130px;
     & .container {
       position: relative;
-      padding: 65px 26px;
-      padding-bottom: 130px;
+      padding: 0 26px;
+
       //   height: 571px;
 
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+    &__gallery {
+      margin-left: -60px;
     }
     &__block {
       position: static;
@@ -257,12 +275,12 @@
       &.left {
         position: absolute;
         top: 300px;
-        left: 26px;
+        left: 47.5px;
       }
       &.right {
         position: absolute;
         top: 300px;
-        right: 26px;
+        right: 47.5px;
       }
     }
 
@@ -281,7 +299,8 @@
     }
     &__title {
       margin-bottom: 30px;
-      @include font(26px, 34px);
+      font-weight: 800;
+      @include font(46px, 60px);
     }
 
     &__right-side {
@@ -289,13 +308,29 @@
       margin-left: 46px;
     }
     &__box-title {
+      font-weight: 800;
       margin-top: 0;
       margin-bottom: 20px;
-      @include font(20px, 24px);
+      @include font(30px, 37px);
     }
 
     &__box-subtitle {
       margin-bottom: 20px;
+      font-weight: 500;
+      @include font(14px, 17px);
+      letter-spacing: 0.08em;
+      width: 438px;
+    }
+    &__desc {
+      font-weight: 500;
+      color: $second-text;
+      @include font(18px, 28px);
+      width: 708px;
+    }
+    &__to-be-continued {
+      font-weight: 500;
+      @include font(18px, 28px);
+      color: $accent-color;
     }
 
     &__photo:nth-child(n + 4) {
