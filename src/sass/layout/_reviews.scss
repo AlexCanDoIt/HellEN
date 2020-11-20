@@ -1,0 +1,343 @@
+// //*------------Reviewes Style------------------*//
+// @media screen and (max-width: 726px) {
+
+.button__slider {
+  width: 54px;
+  height: 54px;
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+  &.first {
+    background: url('../images/reviews/photo1.jpg ') transparent center;
+  }
+  &.second {
+    background: url('../images/reviews/photo2.jpg ') transparent center;
+  }
+  &.third {
+    background: url('../images/reviews/photo3.jpg ') transparent center;
+  }
+  &.fourth {
+    background: url('../images/reviews/photo4.jpg ') transparent center;
+  }
+  &.fifth {
+    background: url('../images/reviews/photo5.jpg ') transparent center;
+  }
+  &.sixth {
+    background: url('../images/reviews/photo6.jpg ') transparent center;
+  }
+  &.seventh {
+    background: url('../images/reviews/photo7.jpg ') transparent center;
+  }
+  &:active,
+  &:hover,
+  &:focus {
+    border: 2px solid $accent-color;
+  }
+  &.is-active {
+    border: 2px solid $accent-color;
+  }
+}
+
+.reviews {
+  padding: 50px 0;
+  &__photo.is-active .button__slider {
+    border: 2px solid $accent-color;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    @include font(20px, 26px);
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $title;
+  }
+
+  &__item {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: $second-title;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  }
+  &__item {
+    display: none;
+    &.is-active {
+      display: block;
+    }
+  }
+
+  &__left-side {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__main-photo {
+    margin-bottom: 20px;
+  }
+
+  &__social-link {
+    width: 30px;
+    height: 30px;
+  }
+
+  &__box-title {
+    margin-bottom: 20px;
+    @include font(14px, 17px);
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    color: $accent-color;
+  }
+
+  &__box-subtitle {
+    margin-bottom: 14px;
+    @include font(12px, 15px);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    color: $text;
+
+    width: 240px;
+  }
+
+  &__desc {
+    @include font(12px, 20px);
+    font-weight: 500;
+
+    color: $second-text;
+    width: 240px;
+    /* text-align: center; */
+  }
+
+  &__to-be-continued {
+    @include font(12px, 20px);
+    font-weight: 500;
+
+    color: $accent-color;
+  }
+  &__gallery {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__button {
+    width: 27px;
+    height: 16px;
+
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    background-color: transparent;
+    cursor: pointer;
+
+    &.left {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+    &.right {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 182px;
+    justify-content: space-between;
+  }
+
+  &__photo:nth-child(n + 4) {
+    display: none;
+  }
+}
+//--------------------------//////////////////////////////////
+
+@media screen and (min-width: 727px) {
+  .reviews {
+    &__gallery {
+      position: static;
+    }
+    &__block {
+      position: relative;
+      width: 713px;
+    }
+    &__button {
+      &.left {
+        position: absolute;
+        top: 157px;
+        left: -13.5px;
+      }
+      &.right {
+        position: absolute;
+        top: 157px;
+        right: -13.5px;
+      }
+    }
+    &__item {
+      display: none;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 40px;
+      margin-bottom: 30px;
+      text-align: left;
+      //   width: 688px;
+      &.is-active {
+        display: flex;
+      }
+    }
+    &__title {
+      margin-bottom: 30px;
+      @include font(26px, 34px);
+    }
+
+    &__right-side {
+      display: block;
+      margin-left: 46px;
+    }
+    &__box-title {
+      font-weight: 800;
+      margin-top: 0;
+      margin-bottom: 20px;
+      @include font(20px, 24px);
+    }
+
+    &__box-subtitle {
+      margin-bottom: 20px;
+      font-weight: 500;
+      @include font(12px, 15px);
+      width: 412px;
+    }
+    &__desc {
+      font-weight: 500;
+      color: $second-text;
+      @include font(12px, 20px);
+      width: 412px;
+    }
+    &__to-be-continued {
+      @include font(12px, 20px);
+      font-weight: 500;
+      color: $accent-color;
+    }
+
+    &__photo:nth-child(n + 4) {
+      display: block;
+    }
+    &__list {
+      width: 558px;
+      //   justify-content: space-between;
+    }
+  }
+}
+//---------------------------------------------------//
+@media screen and (min-width: 1355px) {
+  .reviews {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    & .container {
+      position: relative;
+      padding: 0 26px;
+
+      //   height: 571px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__gallery {
+      margin-left: -60px;
+    }
+    &__block {
+      position: static;
+      width: 1258px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__button {
+      &.left {
+        position: absolute;
+        top: 300px;
+        left: 47.5px;
+      }
+      &.right {
+        position: absolute;
+        top: 300px;
+        right: 47.5px;
+      }
+    }
+
+    &__item {
+      display: none;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 40px;
+      margin-bottom: 30px;
+      text-align: left;
+      width: 1090px;
+      height: 370px;
+      &.is-active {
+        display: flex;
+      }
+    }
+    &__title {
+      margin-bottom: 30px;
+      font-weight: 800;
+      @include font(46px, 60px);
+    }
+
+    &__right-side {
+      display: block;
+      margin-left: 46px;
+    }
+    &__box-title {
+      font-weight: 800;
+      margin-top: 0;
+      margin-bottom: 20px;
+      @include font(30px, 37px);
+    }
+
+    &__box-subtitle {
+      margin-bottom: 20px;
+      font-weight: 500;
+      @include font(14px, 17px);
+      letter-spacing: 0.08em;
+      width: 438px;
+    }
+    &__desc {
+      font-weight: 500;
+      color: $second-text;
+      @include font(18px, 28px);
+      width: 708px;
+    }
+    &__to-be-continued {
+      font-weight: 500;
+      @include font(18px, 28px);
+      color: $accent-color;
+    }
+
+    &__photo:nth-child(n + 4) {
+      display: block;
+    }
+  }
+}
