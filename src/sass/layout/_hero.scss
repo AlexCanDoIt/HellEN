@@ -35,7 +35,7 @@
 
   .hero-container {
     padding-top: 110px;
-    padding-bottom: 255px;
+    padding-bottom: 285px;
     display: flex;
     flex-direction: column;
 
@@ -52,7 +52,7 @@
     }
 
     &::after {
-      bottom: 47px;
+      bottom: 77px;
       left: 56px;
       width: 208px;
       height: 178px;
@@ -81,12 +81,11 @@
   .hero {
     background-image: url('../images/header/tablet-bg.png');
     background-size: 768px;
-    background-position: 50% 50%;
   }
 
   .hero-container {
     padding-top: 158px;
-    padding-bottom: 93px;
+    padding-bottom: 143px;
 
     &__title {
       @include font(26px, 34px);
@@ -100,7 +99,7 @@
     }
 
     &::after {
-      bottom: 93px;
+      bottom: 104px;
       left: 354px;
       width: 376px;
       height: 322px;
@@ -133,7 +132,7 @@
 
   .hero-container {
     padding-top: 229px;
-    padding-bottom: 145px;
+    padding-bottom: 241px;
 
     &__title {
       @include font(58px, 75px);
@@ -146,7 +145,7 @@
     }
 
     &::after {
-      bottom: 14px;
+      bottom: 107px;
       left: 629px;
       width: 842px;
       height: 718px;
