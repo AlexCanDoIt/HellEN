@@ -44,6 +44,9 @@
 
 .reviews {
   padding: 50px 0;
+  &__photo.is-active .button__slider {
+    border: 2px solid $accent-color;
+  }
 
   &__title {
     margin-bottom: 20px;
