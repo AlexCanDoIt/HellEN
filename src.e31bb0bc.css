@@ -500,11 +500,6 @@ body.modal-open {
 
 /* ========== End Common ========== */
 /* ========== Fix-Scrollbar ========== */
-.fix-scrollbar {
-  padding-left: calc(100vw - 100%);
-  padding-right: 0;
-}
-
 /* ========== End Fix-Scrollbar ========== */
 /* ========== Container ========== */
 .container {
