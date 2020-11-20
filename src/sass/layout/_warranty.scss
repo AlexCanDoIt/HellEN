@@ -1,4 +1,4 @@
-/* ========== warranty ========== */
+/* ========== Warranty ========== */
 .warranty {
   &__title {
     font-weight: 800;
@@ -52,7 +52,6 @@
   }
 }
 
-// ========================= TABLET =======================
 @media screen and (min-width: 727px) {
   .warranty {
     &__container {
@@ -80,7 +79,6 @@
   }
 }
 
-// ========================= DESKTOP =======================
 @media screen and (min-width: 1355px) {
   .warranty {
     &__title {
@@ -110,4 +108,4 @@
     }
   }
 }
-/* ========== end warranty ========== */
+/* ========== End Warranty ========== */

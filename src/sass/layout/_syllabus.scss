@@ -1,4 +1,4 @@
-/* ========== syllabus ========== */
+/* ========== Syllabus ========== */
 .syllabus {
   margin: 0 auto;
   position: relative;
@@ -167,7 +167,6 @@
 
 @media screen and (max-width: 726px) {
   .syllabus {
-    // max-width: 320px;
     &__title {
       text-align: center;
     }
@@ -183,7 +182,6 @@
     }
   }
   .advantages {
-    // max-width: 320px;
     &__title {
       width: 180px;
     }
@@ -193,11 +191,8 @@
   }
 }
 
-/*for tablet*/
-
 @media screen and (min-width: 727px) {
   .syllabus {
-    // max-width: 768px;
     &__container {
       padding-top: 60px;
       padding-bottom: 392px;
@@ -256,7 +251,6 @@
   }
 
   .advantages {
-    // max-width: 768px;
     &__container {
       padding-bottom: 252px;
     }
@@ -283,11 +277,8 @@
   }
 }
 
-/*for desktop*/
-
 @media screen and (min-width: 1355px) {
   .syllabus {
-    // max-width: 1680px;
     &__container {
       padding-top: 120px;
       padding-bottom: 363px;
@@ -308,7 +299,6 @@
         content: '';
         height: 1px;
         width: 100vw;
-        // max-width: 1680px;
         transform: translateX(-50%);
       }
     }
@@ -375,7 +365,6 @@
   }
 
   .advantages {
-    // max-width: 1680px;
     &__container {
       padding-bottom: 199px;
     }
@@ -398,32 +387,4 @@
     }
   }
 }
-/*убирает фоновую картинку на больших экранах*/
-// @media screen and (min-width: 1921px) {
-//   .syllabus {
-//     &:after {
-//       opacity: 0.8;
-//     }
-//   }
-// }
-// @media screen and (min-width: 2021px) {
-//   .syllabus {
-//     &:after {
-//       opacity: 0.6;
-//     }
-//   }
-// }
-// @media screen and (min-width: 2321px) {
-//   .syllabus {
-//     &:after {
-//       opacity: 0.3;
-//     }
-//   }
-// }
-// @media screen and (min-width: 2561px) {
-//   .syllabus {
-//     &:after {
-//       opacity: 0;
-//     }
-//   }
-// }
+/* ========== End Syllabus ========== */
