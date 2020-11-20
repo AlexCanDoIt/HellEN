@@ -1,7 +1,7 @@
 /* ========== Benefits ========== */
 .benefits {
   &__container {
-    padding: 50px 52px;
+    padding: 0px 52px 50px 52px;
   }
 
   &__item {
@@ -50,7 +50,7 @@
 
 @media screen and (min-width: 727px) {
   .benefits__container {
-    padding: 50px 20px;
+    padding: 0px 20px 50px 20px;
   }
 
   .benefits {
@@ -73,7 +73,6 @@
 
 @media screen and (min-width: 1355px) {
   .benefits__container {
-    padding-top: 96px;
     padding-bottom: 130px;
   }
 
