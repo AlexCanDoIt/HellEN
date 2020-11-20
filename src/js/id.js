@@ -4,6 +4,6 @@ $(document).ready(function () {
     var id = $(this).attr('href'),
       top = $(id).offset().top;
     $('body,html').animate({ scrollTop: top }, 750);
-    document.querySelector('.header__menu-button').click();
+    document.querySelector('.header__menu-button.is-open').click();
   });
 });
