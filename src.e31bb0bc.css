@@ -984,7 +984,7 @@ body.modal-open {
 
   .hero-container {
     padding-top: 110px;
-    padding-bottom: 255px;
+    padding-bottom: 285px;
     display: flex;
     flex-direction: column;
   }
@@ -999,7 +999,7 @@ body.modal-open {
     margin: 0 auto;
   }
   .hero-container::after {
-    bottom: 47px;
+    bottom: 77px;
     left: 56px;
     width: 208px;
     height: 178px;
@@ -1019,12 +1019,11 @@ body.modal-open {
   .hero {
     background-image: url("/tablet-bg.01a0e6c1.png");
     background-size: 768px;
-    background-position: 50% 50%;
   }
 
   .hero-container {
     padding-top: 158px;
-    padding-bottom: 93px;
+    padding-bottom: 143px;
   }
   .hero-container__title {
     font-size: 26px;
@@ -1037,7 +1036,7 @@ body.modal-open {
     margin-bottom: 30px;
   }
   .hero-container::after {
-    bottom: 93px;
+    bottom: 104px;
     left: 354px;
     width: 376px;
     height: 322px;
@@ -1061,7 +1060,7 @@ body.modal-open {
 
   .hero-container {
     padding-top: 229px;
-    padding-bottom: 145px;
+    padding-bottom: 241px;
   }
   .hero-container__title {
     font-size: 58px;
@@ -1074,7 +1073,7 @@ body.modal-open {
     margin-bottom: 40px;
   }
   .hero-container::after {
-    bottom: 14px;
+    bottom: 107px;
     left: 629px;
     width: 842px;
     height: 718px;
@@ -1111,7 +1110,7 @@ body.modal-open {
 /* ========== End Hero ========== */
 /* ========== Benefits ========== */
 .benefits__container {
-  padding: 50px 52px;
+  padding: 0px 52px 50px 52px;
 }
 .benefits__item {
   display: flex;
@@ -1152,7 +1151,7 @@ body.modal-open {
 }
 @media screen and (min-width: 727px) {
   .benefits__container {
-    padding: 50px 20px;
+    padding: 0px 20px 50px 20px;
   }
 
   .benefits__list {
@@ -1170,7 +1169,6 @@ body.modal-open {
 }
 @media screen and (min-width: 1355px) {
   .benefits__container {
-    padding-top: 96px;
     padding-bottom: 130px;
   }
 
